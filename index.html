@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Company</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav01"></nav>
+  <div id="main">
+  <h1>Nelson Tours</h1>
+  <h2>Expreience the untamed Africa</h2>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="C:\Users\qollo\OneDrive\Pictures\lockscreen\Lion.jpg" alt="Lion" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="C:\Users\qollo\OneDrive\Pictures\lockscreen\Leopard.jpg" alt="Leopard" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="C:\Users\qollo\OneDrive\Pictures\lockscreen\Buffalo.jpg" alt="Buffalo" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="D:\USER\Downloads\indian.jfif" alt="Elephant" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Downloads\brooke-lark-M4E7X3z80PQ-unsplash.jpg" alt="Rhino" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script><br>
+
+
+  <footer id="foot01"></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
